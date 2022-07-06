@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login Portal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+<style>
+	.ftco-section{
+		padding:2em;
+	}
+	.justify-content-center{
+		justify-content:left  !important
+	}
+	.row{
+		margin-left: 70px;
+	}
+	.mb-5, .my-5{
+		margin-bottom: 0rem !important;
+	}
+	.heading-section{
+		display: flex;
+		margin-left: 120px;
+	}
+	.qrimage{
+	   position: absolute;
+       width: 200px;
+       height: 170px;
+       margin-left: 900px;
+	   margin-top: 300px;
+	}
+</style>
+	</head>
+	<body>
+		<div class="qrimage">Log in with QR code</div>
+		<div>  <img class="qrimage" src="data:image/png;base64,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" alt=""></div>
+	<section class="ftco-section">
+	
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Login Portal</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-7 col-lg-5">
+					<div class="wrap">
+						<div class="img" style="background-image: url(images/bg-1.jpg);"></div>
+					
+						<div class="login-wrap p-4 p-md-5">
+			      	<div class="d-flex">
+			      		<div class="w-100">
+			      			<h3 class="mb-4">Sign In</h3>
+			      		</div>
+								<div class="w-100">
+									<p class="social-media d-flex justify-content-end">
+										<a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
+										<a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
+									</p>
+								</div>
+			      	</div>
+							<form action="#" class="signin-form">
+			      		<div class="form-group mt-3">
+			      			<input type="text" class="form-control" required>
+			      			<label class="form-control-placeholder" for="username">Username</label>
+			      		</div>
+		            <div class="form-group">
+		              <input id="password-field" type="password" class="form-control" required>
+		              <label class="form-control-placeholder" for="password">Password</label>
+		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+		            </div>
+		            <div class="form-group">
+		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
+		            </div>
+		            <div class="form-group d-md-flex">
+		            	<div class="w-50 text-left">
+			            	<label class="checkbox-wrap checkbox-primary mb-0">Remember Me
+									  <input type="checkbox" checked>
+									  <span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="w-50 text-md-right">
+										<a href="#">Forgot Password</a>
+									</div>
+		            </div>
+		          </form>
+				  
+		          <p class="text-center">Not a member? <a data-toggle="tab" href="#signup">Sign Up</a></p>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+
